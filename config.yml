@@ -1,0 +1,17 @@
+# Made by DarkCode
+prefix: "&cAntiXray &8&l|"
+
+# Emerald Settings
+enable-emeralds: true
+emerald-alert: 7
+emerald-message: "&c{player} &7has mined &a{ore} &7emeralds in the last 1 hour."
+
+# Diamond Settings
+enable-diamonds: true
+diamond-alert: 12
+diamond-message: "&c{player} &7has mined &a{ore} &7diamonds in the last 1 hour."
+
+# Diamond Settings
+enable-gold: true
+gold-alert: 10
+gold-message: "&c{player} &7has mined &a{ore} &7gold in the last 1 hour."

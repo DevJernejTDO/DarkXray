@@ -1,0 +1,4 @@
+name: AntiXray
+version: 1.0.0.1
+main: systems.darkcode.AintiXray.main.MainAXR
+api-version: 1.16
