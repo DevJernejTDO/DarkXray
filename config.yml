@@ -4,29 +4,29 @@ prefix: "&cAntiXray &8&l|"
 # Emerald Settings
 enable-emeralds: true
 emerald-alert: 7
-emerald-message: "&c{player} &7has mined &a{ore} &7emeralds in the last 1 hour."
+emerald-message: "&c{player} &7has mined &a{ore} &7emeralds blocks in the last 1 hour."
 
 # Diamond Settings
 enable-diamonds: true
 diamond-alert: 12
-diamond-message: "&c{player} &7has mined &a{ore} &7diamonds in the last 1 hour."
+diamond-message: "&c{player} &7has mined &a{ore} &7diamonds blocks in the last 1 hour."
 
 # Gold Settings
 enable-gold: true
 gold-alert: 10
-gold-message: "&c{player} &7has mined &a{ore} &7gold in the last 1 hour."
+gold-message: "&c{player} &7has mined &a{ore} &7gold blocks in the last 1 hour."
 
 # Iron Settings
 enable-iron: true
 iron-alert: 8
-iron-message: "&c{player} &7has mined &a{ore} &7iron in the last 1 hour."
+iron-message: "&c{player} &7has mined &a{ore} &7iron blocks in the last 1 hour."
 
-# Iron Settings
-enable-iron: true
-iron-alert: 15
-iron-message: "&c{player} &7has mined &a{ore} &7lapis in the last 1 hour."
+# Lapis Settings
+enable-lapis: true
+lapis-alert: 15
+lapis-message: "&c{player} &7has mined &a{ore} &7lapis blocks in the last 1 hour."
 
-# Iron Settings
+# Netherite Settings
 enable-netherite: true
 netherite-alert: 5
-netherite-message: "&c{player} &7has mined &a{ore} &7netherite in the last 1 hour."
+netherite-message: "&c{player} &7has mined &a{ore} &7netherite blocks in the last 1 hour."

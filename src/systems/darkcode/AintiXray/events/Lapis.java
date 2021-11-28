@@ -54,7 +54,7 @@ public class Lapis implements Listener
 
 				else
 				{
-					MainAXR.PlayerDataSave.put(event.getPlayer().getUniqueId(), new PlayerData(event.getPlayer(), 0, 0, 0, 1, 0, 0));
+					MainAXR.PlayerDataSave.put(event.getPlayer().getUniqueId(), new PlayerData(event.getPlayer(), 0, 0, 0, 0, 1, 0));
 					PlayerData pData = MainAXR.PlayerDataSave.get(event.getPlayer().getUniqueId());
 
 					if(pData.getLapis() >= MainAXR.plugin.getConfig().getInt("lapis-alert")) 

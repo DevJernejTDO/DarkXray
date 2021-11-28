@@ -19,26 +19,26 @@ public class Emerald implements Listener
 	@EventHandler
 	public void onMine(BlockBreakEvent event)
 	{
-		if(event.getBlock().getType().equals(Material.DIAMOND_ORE) || event.getBlock().getType().name().equals("DEEPSLATE_DIAMOND_ORE"))
+		if(event.getBlock().getType().equals(Material.EMERALD_ORE) || event.getBlock().getType().name().equals("DEEPSLATE_EMERALD_ORE"))
 		{
-			if(MainAXR.plugin.getConfig().getBoolean("enable-diamonds"))
+			if(MainAXR.plugin.getConfig().getBoolean("enable-emeralds"))
 			{	
 				if(MainAXR.PlayerDataSave.containsKey(event.getPlayer().getUniqueId())) 
 				{
 					PlayerData pData = MainAXR.PlayerDataSave.get(event.getPlayer().getUniqueId());
-					pData.setDiamonds(pData.getDiamonds()+1);
+					pData.setEmeralds(pData.getEmeralds()+1);
 
-					if(pData.getDiamonds() >= MainAXR.plugin.getConfig().getInt("diamond-alert")) 
+					if(pData.getEmeralds() >= MainAXR.plugin.getConfig().getInt("emerald-alert")) 
 					{
 						AntiXrayEvent myEvent = new AntiXrayEvent(event.getPlayer());
 						Bukkit.getServer().getPluginManager().callEvent(myEvent);
 						
 						for(Player players : Bukkit.getOnlinePlayers())
 						{
-							if(players.hasPermission("antiXray.alert.diamond") || players.hasPermission("antiXray.alert.*"))
+							if(players.hasPermission("antiXray.alert.emerald") || players.hasPermission("antiXray.alert.*"))
 							{
-								String message = MainAXR.plugin.getConfig().getString("diamond-message");
-								message = message.replace("&", "§"); message = message.replace("{player}", event.getPlayer().getName()); message = message.replace("{ore}", pData.getDiamonds()+"");
+								String message = MainAXR.plugin.getConfig().getString("emerald-message");
+								message = message.replace("&", "§"); message = message.replace("{player}", event.getPlayer().getName()); message = message.replace("{ore}", pData.getEmeralds()+"");
 								players.sendMessage(MainAXR.prefix+" "+message);
 							}
 						}
@@ -47,24 +47,24 @@ public class Emerald implements Listener
 					GameScheduler.RunGameDelayedTask(new GameRunnable() {
 						@Override
 						public void run() {
-							pData.setDiamonds(pData.getDiamonds()-1);
+							pData.setEmeralds(pData.getEmeralds()-1);
 						}
 					}, 20*3600);
 				}
 
 				else
 				{
-					MainAXR.PlayerDataSave.put(event.getPlayer().getUniqueId(), new PlayerData(event.getPlayer(), 0, 1, 0, 0, 0, 0));
+					MainAXR.PlayerDataSave.put(event.getPlayer().getUniqueId(), new PlayerData(event.getPlayer(), 1, 0, 0, 0, 0, 0));
 					PlayerData pData = MainAXR.PlayerDataSave.get(event.getPlayer().getUniqueId());
 
-					if(pData.getDiamonds () >= MainAXR.plugin.getConfig().getInt("diamond-alert")) 
+					if(pData.getEmeralds () >= MainAXR.plugin.getConfig().getInt("emerald-alert")) 
 					{
 						for(Player players : Bukkit.getOnlinePlayers())
 						{
-							if(players.hasPermission("antiXray.alert.diamonds") || players.hasPermission("antiXray.alert.*"))
+							if(players.hasPermission("antiXray.alert.emerald") || players.hasPermission("antiXray.alert.*"))
 							{
-								String message = MainAXR.plugin.getConfig().getString("enable-diamonds");
-								message = message.replace("&", "§"); message = message.replace("{player}", event.getPlayer().getName()); message = message.replace("{ore}", pData.getDiamonds()+"");
+								String message = MainAXR.plugin.getConfig().getString("enable-emeralds");
+								message = message.replace("&", "§"); message = message.replace("{player}", event.getPlayer().getName()); message = message.replace("{ore}", pData.getEmeralds()+"");
 								players.sendMessage(MainAXR.prefix+" "+message);
 							}
 						}
@@ -73,7 +73,7 @@ public class Emerald implements Listener
 					GameScheduler.RunGameDelayedTask(new GameRunnable() {
 						@Override
 						public void run() {
-							pData.setDiamonds(pData.getDiamonds()-1);
+							pData.setEmeralds(pData.getEmeralds()-1);
 						}
 					}, 20*3600);
 				}
