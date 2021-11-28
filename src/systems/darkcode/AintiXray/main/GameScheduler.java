@@ -16,5 +16,4 @@ public class GameScheduler {
 		runnable.SetPlugin(MainAXR.GetInstance());
 	}
 	
-	
 }

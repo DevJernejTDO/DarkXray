@@ -31,7 +31,7 @@ public class AntiXrayEvent extends Event
 		netherite = pData.getNetherite();
 
 	}
-
+	
 	public Player getPlayer() 
 	{
 		return player;

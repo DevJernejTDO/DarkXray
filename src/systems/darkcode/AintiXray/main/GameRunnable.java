@@ -26,5 +26,4 @@ public abstract class GameRunnable implements Runnable {
 	public MainAXR GetPlugin() {
 		return this.plugin;
 	}
-	
 }

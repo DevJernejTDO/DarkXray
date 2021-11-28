@@ -11,7 +11,22 @@ enable-diamonds: true
 diamond-alert: 12
 diamond-message: "&c{player} &7has mined &a{ore} &7diamonds in the last 1 hour."
 
-# Diamond Settings
+# Gold Settings
 enable-gold: true
 gold-alert: 10
 gold-message: "&c{player} &7has mined &a{ore} &7gold in the last 1 hour."
+
+# Iron Settings
+enable-iron: true
+iron-alert: 8
+iron-message: "&c{player} &7has mined &a{ore} &7iron in the last 1 hour."
+
+# Iron Settings
+enable-iron: true
+iron-alert: 15
+iron-message: "&c{player} &7has mined &a{ore} &7lapis in the last 1 hour."
+
+# Iron Settings
+enable-netherite: true
+netherite-alert: 5
+netherite-message: "&c{player} &7has mined &a{ore} &7netherite in the last 1 hour."
