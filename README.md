@@ -3,7 +3,7 @@
 This is a spigot plugin made by DevJernejTDO. It detects player breaking ors withe the BlockBreakEvent (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockBreakEvent.html). 
 
 # Spigot support
- - 1.18.x (Tested)
+ - 1.18 (Tested)
  - 1.17.x (Tested)
  - 1.16.x (Tested)
  - 1.15.x (Not tested)
