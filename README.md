@@ -1,3 +1,6 @@
+# Inactive
+Inactive for now but still working on an update and a plugin recode. 
+
 # DarkXray
 
 This is a spigot plugin made by DevJernejTDO. It detects player breaking ors withe the BlockBreakEvent (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockBreakEvent.html). 
